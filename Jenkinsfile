@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying'
                 echo 'done by me - new 3'
-                sh 'docker-compose down && docker-compose up -d'
+                sh 'docker run ajitfawade14/node-todo-app:latest -p 8000:8000 --name new-app'
             }
         }
 
