@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying'
                 echo 'done by me - new 3'
-                sh 'docker run -p 8000:8000 --name new-app ajitfawade14/node-todo-app:latest
+                sh 'docker run -p 8000:8000 --name new-app ajitfawade14/node-todo-app:latest'
 '
             }
         }
