@@ -17,13 +17,11 @@ pipeline {
                 sh 'docker build . -t ajitfawade14/node-todo-app:latest'
             }
         }
-        
 
-        
         stage ('Deploy') {
             steps {
                 echo 'Deploying'
-                echo 'done by me'
+                echo 'done by me - new'
                 sh 'docker-compose down && docker-compose up -d'
             }
         }
