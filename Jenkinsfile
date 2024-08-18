@@ -21,7 +21,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 echo 'Deploying'
-                echo 'done by me - new'
+                echo 'done by me - new 3'
                 sh 'docker-compose down && docker-compose up -d'
             }
         }
