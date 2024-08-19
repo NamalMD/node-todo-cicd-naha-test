@@ -44,6 +44,7 @@ pipeline {
       steps {
         script {
           kubernetesDeploy(configs: "deploymentservice.yml", kubeconfigId: "k8_config")
+          kubernetesDeploy(configs: "service.yaml", kubeconfigId: "k8_config")
         }
       }
     }
